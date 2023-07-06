@@ -1,0 +1,5294 @@
+[
+    {
+        "id": "1149bf0b2a99617a",
+        "type": "tab",
+        "label": "Panel de control General",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f189f50505a7bc56",
+        "type": "tab",
+        "label": "Recepción de Datos",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "45888e1b355f0888",
+        "type": "tab",
+        "label": "Panel de control Planta 0",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "22748c8908ef9353",
+        "type": "tab",
+        "label": "Paneles de control Planta 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1502873c65ff77ae",
+        "type": "tab",
+        "label": "Panel de control Planta 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a028eb9e53fec6ae",
+        "type": "tab",
+        "label": "Horarios",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f9584d3e80e0ebd9",
+        "type": "tab",
+        "label": "Temporizadores",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ef3b051f2583a5d0",
+        "type": "group",
+        "z": "f189f50505a7bc56",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "053c2fff92726bfb",
+            "86ca9b9086aaabad",
+            "3136582349642243",
+            "ca9d862f0815c5e5"
+        ],
+        "x": 54,
+        "y": 359
+    },
+    {
+        "id": "8a3a59baa996eaaf",
+        "type": "group",
+        "z": "a028eb9e53fec6ae",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3eaa9d1cc94da121",
+            "ce7dcda2c34dd737",
+            "0fd1df4013cf44be",
+            "4d2a7ad8f384c02b"
+        ],
+        "x": 634,
+        "y": 459
+    },
+    {
+        "id": "2e313fa5fa6ebf68",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://InfluxDB:8086",
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "1d1e45182f987110",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "CUMe Fan Coil Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ba7ede7944c6a3ca",
+        "type": "ui_group",
+        "name": "Despacho 41",
+        "tab": "418dabab021c2194",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "418dabab021c2194",
+        "type": "ui_tab",
+        "name": "Planta 2",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a2fcf6a979a73b86",
+        "type": "ui_tab",
+        "name": "General",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d45cc1a1ffd00350",
+        "type": "ui_group",
+        "name": "Configuración",
+        "tab": "a2fcf6a979a73b86",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "24e3d668ffb0aeae",
+        "type": "ui_group",
+        "name": "Despacho 40",
+        "tab": "418dabab021c2194",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8353f0d05bb40bad",
+        "type": "ui_group",
+        "name": "Despacho 16",
+        "tab": "256582295d6b9816",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7bd6f99b28dc835e",
+        "type": "ui_tab",
+        "name": "Planta 0",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0b06c9f7f5a9417b",
+        "type": "ui_group",
+        "name": "Despacho 5",
+        "tab": "7bd6f99b28dc835e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "256582295d6b9816",
+        "type": "ui_tab",
+        "name": "Planta 1",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e69cff66cda9f405",
+        "type": "ui_group",
+        "name": "Despacho 39",
+        "tab": "418dabab021c2194",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7a1b3b8840aebe51",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f4e1b032aa6b696e",
+        "type": "ui_switch",
+        "z": "1149bf0b2a99617a",
+        "name": "Switch Estación",
+        "label": "",
+        "tooltip": "",
+        "group": "d45cc1a1ffd00350",
+        "order": 7,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "estacion",
+        "topicType": "global",
+        "style": "",
+        "onvalue": "verano",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "invierno",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 720,
+        "y": 180,
+        "wires": [
+            [
+                "2bc9c6e474eb3a12"
+            ]
+        ]
+    },
+    {
+        "id": "08f40d54644f01e9",
+        "type": "ui_text",
+        "z": "1149bf0b2a99617a",
+        "group": "d45cc1a1ffd00350",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "name": "",
+        "label": "Invierno",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 620,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f6441ca6b52cabea",
+        "type": "ui_text",
+        "z": "1149bf0b2a99617a",
+        "group": "d45cc1a1ffd00350",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Verano",
+        "format": "",
+        "layout": "row-spread",
+        "className": "",
+        "x": 780,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8d64fca0299b12fd",
+        "type": "inject",
+        "z": "1149bf0b2a99617a",
+        "name": "Inicio Estación",
+        "props": [
+            {
+                "p": "query",
+                "v": "from(bucket: \"FanCoil\")   |> range(start: -30d)   |> filter(fn: (r) => r[\"_measurement\"] == \"ESTACION\")   |> yield(name: \"last\")",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "8bc1e50747f98322"
+            ]
+        ]
+    },
+    {
+        "id": "d9039e8b2b8cf879",
+        "type": "inject",
+        "z": "1149bf0b2a99617a",
+        "name": "Inicialización de variables globales",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "28b7adb3bd3160ca"
+            ]
+        ]
+    },
+    {
+        "id": "28b7adb3bd3160ca",
+        "type": "function",
+        "z": "1149bf0b2a99617a",
+        "name": "Variables",
+        "func": "global.set(\"nodo_despacho_1\", \"nodo-d1\");\nglobal.set(\"nodo_despacho_2\", \"nodo-d2\");\nglobal.set(\"nodo_despacho_3\", \"nodo-d3\");\nglobal.set(\"nodo_despacho_4\", \"nodo-d4\");\nglobal.set(\"nodo_despacho_5\", \"nodo-d5\");\nglobal.set(\"nodo_despacho_6\", \"nodo-d6\");\nglobal.set(\"nodo_despacho_7\", \"nodo-d7\");\nglobal.set(\"nodo_despacho_8\", \"nodo-d8\");\nglobal.set(\"nodo_despacho_9\", \"nodo-d9\");\nglobal.set(\"nodo_despacho_10\", \"nodo-d10\");\nglobal.set(\"nodo_despacho_11\", \"nodo-d11\");\nglobal.set(\"nodo_despacho_12\", \"nodo-d12\");\nglobal.set(\"nodo_despacho_13\", \"nodo-d13\");\nglobal.set(\"nodo_despacho_14\", \"nodo-d14\");\nglobal.set(\"nodo_despacho_15\", \"nodo-d15\");\nglobal.set(\"nodo_despacho_16\", \"nodo-d16\");\nglobal.set(\"nodo_despacho_17\", \"nodo-d17\");\nglobal.set(\"nodo_despacho_18\", \"nodo-d18\");\nglobal.set(\"nodo_despacho_19\", \"nodo-d19\");\nglobal.set(\"nodo_despacho_20\", \"nodo-d20\");\nglobal.set(\"nodo_despacho_21\", \"nodo-d21\");\nglobal.set(\"nodo_despacho_22\", \"nodo-d22\");\nglobal.set(\"nodo_despacho_23\", \"nodo-d23\");\nglobal.set(\"nodo_despacho_24\", \"nodo-d24\");\nglobal.set(\"nodo_despacho_25\", \"nodo-d25\");\nglobal.set(\"nodo_despacho_26\", \"nodo-d26\");\nglobal.set(\"nodo_despacho_27\", \"nodo-d27\");\nglobal.set(\"nodo_despacho_28\", \"nodo-d28\");\nglobal.set(\"nodo_despacho_29\", \"nodo-d29\");\nglobal.set(\"nodo_despacho_30\", \"nodo-d30\");\nglobal.set(\"nodo_despacho_31\", \"nodo-d31\");\nglobal.set(\"nodo_despacho_32\", \"nodo-d32\");\nglobal.set(\"nodo_despacho_33\", \"nodo-d33\");\nglobal.set(\"nodo_despacho_34\", \"nodo-d34\");\nglobal.set(\"nodo_despacho_35\", \"nodo-d35\");\nglobal.set(\"nodo_despacho_36\", \"nodo-d36\");\nglobal.set(\"nodo_despacho_37\", \"nodo-d37\");\nglobal.set(\"nodo_despacho_38\", \"nodo-d38\");\nglobal.set(\"nodo_despacho_39\", \"nodo-d39\");\nglobal.set(\"nodo_despacho_40\", \"nodo-d40\");\nglobal.set(\"nodo_despacho_41\", \"nodo-d41\");",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd8f5e4581fca0c9",
+        "type": "inject",
+        "z": "1149bf0b2a99617a",
+        "name": "Inicio MAX_TEMP",
+        "props": [
+            {
+                "p": "query",
+                "v": "from(bucket: \"FanCoil\")   |> range(start: -30d)   |> filter(fn: (r) => r[\"_measurement\"] == \"MAX_TEMP\")   |> yield(name: \"last\")",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "255826eabd1fed8d"
+            ]
+        ]
+    },
+    {
+        "id": "255826eabd1fed8d",
+        "type": "influxdb in",
+        "z": "1149bf0b2a99617a",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB IN",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "unex",
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "be25b15f404625b1"
+            ]
+        ]
+    },
+    {
+        "id": "be25b15f404625b1",
+        "type": "function",
+        "z": "1149bf0b2a99617a",
+        "name": "Control Respuesta",
+        "func": "if(msg.payload.length == 0){\n    if(global.get(\"estacion\") == \"verano\"){\n        msg.payload = 29;\n    } else {\n        msg.payload = 19;\n    }\n} else {\n    msg.payload = msg.payload[msg.payload.length - 1]._value;\n}\n\nglobal.set(\"MAX_TEMP\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "2f68501e78fc89c2"
+            ]
+        ]
+    },
+    {
+        "id": "313cd90f9a565d12",
+        "type": "function",
+        "z": "1149bf0b2a99617a",
+        "name": "Comprobar Valor Introducido",
+        "func": "if (global.get(\"MIN_TEMP\") > msg.payload){\n    msg.payload = global.get(\"MAX_TEMP\");\n}else{\n    global.set(\"MAX_TEMP\", msg.payload);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 280,
+        "wires": [
+            [
+                "2f68501e78fc89c2",
+                "aa59f17ec3b8031d"
+            ]
+        ]
+    },
+    {
+        "id": "d38841910d38c456",
+        "type": "inject",
+        "z": "1149bf0b2a99617a",
+        "name": "Inicio MIN_TEMP",
+        "props": [
+            {
+                "p": "query",
+                "v": "from(bucket: \"FanCoil\")   |> range(start: -30d)   |> filter(fn: (r) => r[\"_measurement\"] == \"MIN_TEMP\")   |> yield(name: \"last\")",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "33b79a81d19b91a2"
+            ]
+        ]
+    },
+    {
+        "id": "33b79a81d19b91a2",
+        "type": "influxdb in",
+        "z": "1149bf0b2a99617a",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB IN",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "unex",
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "fc68e140df2ce391"
+            ]
+        ]
+    },
+    {
+        "id": "fc68e140df2ce391",
+        "type": "function",
+        "z": "1149bf0b2a99617a",
+        "name": "Control Respuesta",
+        "func": "if(msg.payload.length == 0){\n    if(global.get(\"estacion\") == \"verano\"){\n        msg.payload = 27;\n    }else{\n        msg.payload = 17;\n    }\n} else {\n    msg.payload = msg.payload[msg.payload.length - 1]._value;\n}\n\nglobal.set(\"MIN_TEMP\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "7a8c69da0ab7bd4b"
+            ]
+        ]
+    },
+    {
+        "id": "7a8c69da0ab7bd4b",
+        "type": "ui_slider",
+        "z": "1149bf0b2a99617a",
+        "name": "Temperatura Mínima 2",
+        "label": "",
+        "tooltip": "",
+        "group": "d45cc1a1ffd00350",
+        "order": 5,
+        "width": "14",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "MIN_TEMP",
+        "topicType": "str",
+        "min": "10",
+        "max": "40",
+        "step": 1,
+        "className": "",
+        "x": 740,
+        "y": 380,
+        "wires": [
+            [
+                "2ffdbc70a306b9ca"
+            ]
+        ]
+    },
+    {
+        "id": "2ffdbc70a306b9ca",
+        "type": "function",
+        "z": "1149bf0b2a99617a",
+        "name": "Comprobar Valor Introducido",
+        "func": "if (global.get(\"MAX_TEMP\") < msg.payload) {\n    msg.payload = global.get(\"MIN_TEMP\");\n}else{\n    global.set(\"MIN_TEMP\", msg.payload);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 380,
+        "wires": [
+            [
+                "7a8c69da0ab7bd4b",
+                "ec963521e5a89956"
+            ]
+        ]
+    },
+    {
+        "id": "2f68501e78fc89c2",
+        "type": "ui_slider",
+        "z": "1149bf0b2a99617a",
+        "name": "Temperatura Máxima 2",
+        "label": "",
+        "tooltip": "",
+        "group": "d45cc1a1ffd00350",
+        "order": 3,
+        "width": "14",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "MAX_TEMP",
+        "topicType": "str",
+        "min": "10",
+        "max": "40",
+        "step": 1,
+        "className": "",
+        "x": 740,
+        "y": 280,
+        "wires": [
+            [
+                "313cd90f9a565d12"
+            ]
+        ]
+    },
+    {
+        "id": "62f6d719764e28d4",
+        "type": "influxdb out",
+        "z": "1149bf0b2a99617a",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB OUT",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "unex",
+        "bucket": "FanCoil",
+        "x": 1500,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "aa59f17ec3b8031d",
+        "type": "change",
+        "z": "1149bf0b2a99617a",
+        "name": "Control Escritura InfluxDB",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.MAX_TEMP",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "MAX_TEMP",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 280,
+        "wires": [
+            [
+                "62f6d719764e28d4"
+            ]
+        ]
+    },
+    {
+        "id": "ec963521e5a89956",
+        "type": "change",
+        "z": "1149bf0b2a99617a",
+        "name": "Control Escritura InfluxDB",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.MIN_TEMP",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "MIN_TEMP",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 380,
+        "wires": [
+            [
+                "62f6d719764e28d4"
+            ]
+        ]
+    },
+    {
+        "id": "8bc1e50747f98322",
+        "type": "influxdb in",
+        "z": "1149bf0b2a99617a",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB IN",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "unex",
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "6876c777ee40c8dd"
+            ]
+        ]
+    },
+    {
+        "id": "6876c777ee40c8dd",
+        "type": "function",
+        "z": "1149bf0b2a99617a",
+        "name": "Control Respuesta",
+        "func": "if(msg.payload.length == 0){\n    msg.payload = \"invierno\";\n} else {\n    msg.payload = msg.payload[msg.payload.length - 1]._value;\n}\n\nglobal.set(\"estacion\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "f4e1b032aa6b696e"
+            ]
+        ]
+    },
+    {
+        "id": "5aa1f29ea5b19006",
+        "type": "ui_text",
+        "z": "1149bf0b2a99617a",
+        "group": "d45cc1a1ffd00350",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "name": "Temperatura Máxima (ºC)",
+        "label": "Temperatura Máxima (ºC)",
+        "format": "",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5996db4b86a3da8b",
+        "type": "ui_text",
+        "z": "1149bf0b2a99617a",
+        "group": "d45cc1a1ffd00350",
+        "order": 4,
+        "width": "5",
+        "height": "1",
+        "name": "Temperatura Mínima (ºC)",
+        "label": "Temperatura Mínima (ºC)",
+        "format": "",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "2bc9c6e474eb3a12",
+        "type": "change",
+        "z": "1149bf0b2a99617a",
+        "name": "Control Escritura InfluxDB",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.ESTACION",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "ESTACION",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 180,
+        "wires": [
+            [
+                "62f6d719764e28d4"
+            ]
+        ]
+    },
+    {
+        "id": "da339cc2ce67a3c8",
+        "type": "mqtt in",
+        "z": "f189f50505a7bc56",
+        "name": "The Things Network",
+        "topic": "v3/auto-fan-cooler-cume@ttn/devices/+/up",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7a1b3b8840aebe51",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "c298b9508e0e043f"
+            ]
+        ]
+    },
+    {
+        "id": "58efe90e9e3acfec",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Traducir datos",
+        "func": "var buffer = new ArrayBuffer(4);\nvar view = new DataView(buffer);\n\n// var nombres = [\"medida1\", \"medida2\", \"medida3\", \"medida4\", \"medida5\", \"medida6\", \"medida7\", \"medida8\", \"medida9\", \"medida10\"]\nvar lista_temperaturas = [];\nvar lista_humedad = [];\nvar lista_rele = [];\n\nvar longitud_array = msg.payload.uplink_message.decoded_payload.bytes.length;\n\nfor(var i = 0; i < longitud_array; i+=9){\n    view.setUint8(0, msg.payload.uplink_message.decoded_payload.bytes[i]);\n    view.setUint8(1, msg.payload.uplink_message.decoded_payload.bytes[i+1]);\n    view.setUint8(2, msg.payload.uplink_message.decoded_payload.bytes[i+2]);\n    view.setUint8(3, msg.payload.uplink_message.decoded_payload.bytes[i+3]);\n    var floatArray = new Float32Array(buffer);\n    lista_temperaturas[i/9] = floatArray[0];\n\n\n    view.setUint8(0, msg.payload.uplink_message.decoded_payload.bytes[i+4]);\n    view.setUint8(1, msg.payload.uplink_message.decoded_payload.bytes[i+5]);\n    view.setUint8(2, msg.payload.uplink_message.decoded_payload.bytes[i+6]);\n    view.setUint8(3, msg.payload.uplink_message.decoded_payload.bytes[i+7]);\n    var floatArray = new Float32Array(buffer);\n    lista_humedad[i/9] = floatArray[0];\n\n    lista_rele[i / 9] = msg.payload.uplink_message.decoded_payload.bytes[i+8];\n}\n\nmsg.payload = {};\n\nfor(var i = 0; i < longitud_array/9; i++){\n    msg.payload[i] = {\n        \"temperatura\" : lista_temperaturas[i],\n        \"humedad\" : lista_humedad[i],\n        \"rele\" : lista_rele[i]\n    }\n}\n\nmsg.medidas = {\n    temperatura : [],\n    humedad : [],\n    rele : []\n};\n\nfor (var i = 0; i < longitud_array / 9; i++) {\n    msg.medidas.temperatura[i] = parseFloat(lista_temperaturas[i].toFixed(1));\n    msg.medidas.humedad[i] = parseFloat(lista_humedad[i].toFixed(1));\n    msg.medidas.rele[i] = lista_rele[i] == 1;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 160,
+        "wires": [
+            [
+                "0cbdde33be44fea8",
+                "1f9b268cd90c711b",
+                "934a3d0317604c65",
+                "c9aa22f89764f9af",
+                "ae7ca61136409d1e"
+            ]
+        ]
+    },
+    {
+        "id": "1f9b268cd90c711b",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Preparar temperatura",
+        "func": "/*\nlet ultima_medida = msg.payload[Object.keys(msg.payload)[Object.keys(msg.payload).length - 1]];\nmsg.payload = parseFloat(ultima_medida.temperatura.toFixed(1));\n*/\nmsg.payload = msg.medidas.temperatura;\nmsg.topic = msg.topic.split(\"/\")[msg.topic.split(\"/\").length - 2];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 280,
+        "wires": [
+            [
+                "cadfe48b374fbb9f"
+            ]
+        ]
+    },
+    {
+        "id": "934a3d0317604c65",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Preparar humedad",
+        "func": "/*\nlet ultima_medida = msg.payload[Object.keys(msg.payload)[Object.keys(msg.payload).length - 1]];\nmsg.payload = parseFloat(ultima_medida.humedad.toFixed(1));\n*/\nmsg.payload = msg.medidas.humedad;\nmsg.topic = msg.topic.split(\"/\")[msg.topic.split(\"/\").length - 2];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 360,
+        "wires": [
+            [
+                "62406b8b90b6d57f"
+            ]
+        ]
+    },
+    {
+        "id": "9bef102bf3e02b3b",
+        "type": "ui_chart",
+        "z": "f189f50505a7bc56",
+        "name": "",
+        "group": "d45cc1a1ffd00350",
+        "order": 9,
+        "width": "0",
+        "height": "0",
+        "label": "Gráfica Diaria",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "bezier",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-10",
+        "ymax": "60",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1120,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0cbdde33be44fea8",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Encendido / Apagado del Relé",
+        "func": "let elementos = msg.topic.split(\"/\");\nlet topic = elementos.slice(0, elementos.length - 1).join(\"/\") + \"/down/push\";\n\nlet ultima_medida = msg.payload[Object.keys(msg.payload)[Object.keys(msg.payload).length - 1]];\n\nnode.warn(global.get(\"horario_\" + msg.topic.split(\"/\")[msg.topic.split(\"/\").length - 2]) == \"FIN\");\nnode.warn(ultima_medida);\nnode.warn(global.get(\"MAX_TEMP\"));\nnode.warn(global.get(\"MIN_TEMP\"));\n\nif (global.get(\"horario_\" + msg.topic.split(\"/\")[msg.topic.split(\"/\").length - 2]) == \"FIN\"){ // Si estamos dentro de un horario del despacho en el que se encuentra el nodo\n    if ((global.get(\"MAX_TEMP\") < ultima_medida.temperatura && global.get(\"estacion\") == \"verano\" && ultima_medida.rele == 0) || (global.get(\"MIN_TEMP\") > ultima_medida.temperatura && global.get(\"estacion\") == \"invierno\" && ultima_medida.rele == 0)) {\n        node.warn(\"ON\");\n        return {\n            \"payload\": {\n                \"downlinks\": [{\n                    \"f_port\": 4,\n                    \"frm_payload\": Buffer.from(\"ON\", \"utf-8\").toString(\"base64\"),\n                    \"priority\": \"NORMAL\",\n                    \"confirmed\": true\n                }]\n            },\n            \"topic\": topic\n        }\n    } else if ((global.get(\"MAX_TEMP\") < ultima_medida.temperatura && global.get(\"estacion\") == \"invierno\" && ultima_medida.rele == 1) || (global.get(\"MIN_TEMP\") > ultima_medida.temperatura && global.get(\"estacion\") == \"verano\" && ultima_medida.rele == 1)) {\n        node.warn(\"OFF\");\n        return {\n            \"payload\": {\n                \"downlinks\": [{\n                    \"f_port\": 4,\n                    \"frm_payload\": Buffer.from(\"OFF\", \"utf-8\").toString(\"base64\"),\n                    \"priority\": \"NORMAL\",\n                    \"confirmed\": true\n                }]\n            },\n            \"topic\": topic\n        }\n    }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 160,
+        "wires": [
+            [
+                "5aeb3b2db6e9a3b5"
+            ]
+        ]
+    },
+    {
+        "id": "5aeb3b2db6e9a3b5",
+        "type": "mqtt out",
+        "z": "f189f50505a7bc56",
+        "name": "The Things Network",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7a1b3b8840aebe51",
+        "x": 1140,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7a7ce6fd9c1e0a1a",
+        "type": "link out",
+        "z": "f189f50505a7bc56",
+        "name": "RecepciónDeDatos_OUT_Temp",
+        "mode": "link",
+        "links": [
+            "f2fdef38bc502b98"
+        ],
+        "x": 975,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8c33a718ee9d7606",
+        "type": "link out",
+        "z": "f189f50505a7bc56",
+        "name": "RecepciónDeDatos_OUT_Hum",
+        "mode": "link",
+        "links": [
+            "6d153bfa14872b25"
+        ],
+        "x": 975,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c298b9508e0e043f",
+        "type": "switch",
+        "z": "f189f50505a7bc56",
+        "name": "¿Error?",
+        "property": "payload.uplink_message.decoded_payload.flag",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "NaN",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ERROR",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [
+                "58efe90e9e3acfec"
+            ],
+            [
+                "899156a369d6054d"
+            ]
+        ]
+    },
+    {
+        "id": "134e1a678f05e838",
+        "type": "ui_toast",
+        "z": "f189f50505a7bc56",
+        "position": "dialog",
+        "displayTime": "10",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Corregido",
+        "cancel": "Ignorar",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Diálogo Error",
+        "x": 430,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "899156a369d6054d",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Control Error",
+        "func": "var nodo = msg.topic.split(\"/\")[msg.topic.split(\"/\").length - 2];\nmsg.payload = \"Error en el sensor del dispositivo '\" + nodo + \"'.\"\nmsg.topic = \"¡AVISO IMPORTANTE!\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "134e1a678f05e838"
+            ]
+        ]
+    },
+    {
+        "id": "053c2fff92726bfb",
+        "type": "inject",
+        "z": "f189f50505a7bc56",
+        "g": "ef3b051f2583a5d0",
+        "name": "Despacho 40",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "v3/auto-fan-cooler-cume@ttn/devices/nodo-d40/up",
+        "payload": "{\"uplink_message\":{\"decoded_payload\":{\"bytes\":[163,247,187,65,224,182,132,66,1,154,13,188,65,176,65,132,66,1,145,35,188,65,128,204,131,66,1],\"flag\":\"NaN\"}}}",
+        "payloadType": "json",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "c298b9508e0e043f"
+            ]
+        ]
+    },
+    {
+        "id": "c9aa22f89764f9af",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Preparar Relé",
+        "func": "/*\nlet ultima_medida = msg.payload[Object.keys(msg.payload)[Object.keys(msg.payload).length - 1]];\n\nif (ultima_medida.rele == 1){\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n*/\nmsg.payload = msg.medidas.rele;\nmsg.topic = msg.topic.split(\"/\")[msg.topic.split(\"/\").length - 2];\nglobal.set(\"rele_\" + msg.topic, msg.payload[msg.payload.length - 1]);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 440,
+        "wires": [
+            [
+                "42e2cf9e4833bb48"
+            ]
+        ]
+    },
+    {
+        "id": "aef63b0839f01ca3",
+        "type": "link out",
+        "z": "f189f50505a7bc56",
+        "name": "RecepcionDeDatos_OUT_Rele",
+        "mode": "link",
+        "links": [
+            "3772c3aa70e78555"
+        ],
+        "x": 975,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "84088883585538e4",
+        "type": "link in",
+        "z": "f189f50505a7bc56",
+        "name": "RecepcionDeDatos_IN_Rele",
+        "links": [
+            "ca685a08b1816811",
+            "11a227b30d24c0bf",
+            "56abb469ac7a66dc"
+        ],
+        "x": 795,
+        "y": 120,
+        "wires": [
+            [
+                "14e8447e48467f26"
+            ]
+        ]
+    },
+    {
+        "id": "86ca9b9086aaabad",
+        "type": "inject",
+        "z": "f189f50505a7bc56",
+        "g": "ef3b051f2583a5d0",
+        "name": "Despacho 39",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "v3/auto-fan-cooler-cume@ttn/devices/nodo-d39/up",
+        "payload": "{\"uplink_message\":{\"decoded_payload\":{\"bytes\":[163,247,187,65,224,182,132,66,1,154,13,188,65,176,65,132,66,1,145,35,188,65,128,204,131,66,1],\"flag\":\"NaN\"}}}",
+        "payloadType": "json",
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "c298b9508e0e043f"
+            ]
+        ]
+    },
+    {
+        "id": "3136582349642243",
+        "type": "inject",
+        "z": "f189f50505a7bc56",
+        "d": true,
+        "g": "ef3b051f2583a5d0",
+        "name": "Despacho 5",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "v3/auto-fan-cooler-cume@ttn/devices/nodo-d5/up",
+        "payload": "{\"uplink_message\":{\"decoded_payload\":{\"bytes\":[163,247,187,65,224,182,132,66,1,154,13,188,65,176,65,132,66,1,145,35,188,65,128,204,131,66,1],\"flag\":\"NaN\"}}}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 520,
+        "wires": [
+            [
+                "c298b9508e0e043f"
+            ]
+        ]
+    },
+    {
+        "id": "ca9d862f0815c5e5",
+        "type": "inject",
+        "z": "f189f50505a7bc56",
+        "d": true,
+        "g": "ef3b051f2583a5d0",
+        "name": "Despacho 16",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "v3/auto-fan-cooler-cume@ttn/devices/nodo-d16/up",
+        "payload": "{\"uplink_message\":{\"decoded_payload\":{\"bytes\":[163,247,187,65,224,182,132,66,1,154,13,188,65,176,65,132,66,1,145,35,188,65,128,204,131,66,1],\"flag\":\"NaN\"}}}",
+        "payloadType": "json",
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "c298b9508e0e043f"
+            ]
+        ]
+    },
+    {
+        "id": "ee268ddcd251a907",
+        "type": "influxdb out",
+        "z": "f189f50505a7bc56",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB OUT",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "unex",
+        "bucket": "FanCoil",
+        "x": 1240,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "fd1121ea6ea1433e",
+        "type": "change",
+        "z": "f189f50505a7bc56",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.temperatura",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "tags.nodo",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "temperatura",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 300,
+        "wires": [
+            [
+                "ee268ddcd251a907"
+            ]
+        ]
+    },
+    {
+        "id": "a8225d0a88f81906",
+        "type": "change",
+        "z": "f189f50505a7bc56",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.humedad",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "tags.nodo",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "humedad",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 380,
+        "wires": [
+            [
+                "ee268ddcd251a907"
+            ]
+        ]
+    },
+    {
+        "id": "f2fe536fe8fc436d",
+        "type": "change",
+        "z": "f189f50505a7bc56",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.rele",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "tags.nodo",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "rele",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 460,
+        "wires": [
+            [
+                "ee268ddcd251a907"
+            ]
+        ]
+    },
+    {
+        "id": "14e8447e48467f26",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Control Relé",
+        "func": "let topic = \"v3/auto-fan-cooler-cume@ttn/devices/\" + msg.topic + \"/down/push\"\n\n// Comprobamos la última temperatura guardada del nodo\nif (global.get(\"MAX_TEMP\") < global.get(\"temperatura_\"+msg.topic) && global.get(\"estacion\") == \"verano\" && msg.payload == true && global.get(\"rele_\"+msg.topic) == false) {\n    global.set(\"rele_\" + msg.topic, msg.payload);\n    node.warn(\"ON\");\n    return {\n        \"payload\" : {\n            \"downlinks\": [{\n                \"f_port\": 4,\n                \"frm_payload\": Buffer.from(\"ON\", \"utf-8\").toString(\"base64\"),\n                \"priority\": \"NORMAL\",\n                \"confirmed\": true\n            }]\n        },\n        \"topic\": topic\n    }\n} else if (msg.payload == false) {\n    global.set(\"rele_\" + msg.topic, msg.payload);\n    node.warn(\"OFF\");\n    return {\n        \"payload\" : {\n            \"downlinks\": [{\n                \"f_port\": 4,\n                \"frm_payload\": Buffer.from(\"OFF\", \"utf-8\").toString(\"base64\"),\n                \"priority\": \"NORMAL\",\n                \"confirmed\": true\n            }]\n        },\n        \"topic\": topic\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 120,
+        "wires": [
+            [
+                "5aeb3b2db6e9a3b5"
+            ]
+        ]
+    },
+    {
+        "id": "cadfe48b374fbb9f",
+        "type": "split",
+        "z": "f189f50505a7bc56",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 890,
+        "y": 280,
+        "wires": [
+            [
+                "fd1121ea6ea1433e",
+                "7a7ce6fd9c1e0a1a"
+            ]
+        ]
+    },
+    {
+        "id": "ae7ca61136409d1e",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Preparar Temperatura para Gráfica",
+        "func": "msg.payload = msg.medidas.temperatura[msg.medidas.temperatura.length - 1]\nmsg.topic = msg.topic.split(\"/\")[msg.topic.split(\"/\").length - 2];\nglobal.set(\"temperatura_\" + msg.topic, msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 200,
+        "wires": [
+            [
+                "9bef102bf3e02b3b"
+            ]
+        ]
+    },
+    {
+        "id": "62406b8b90b6d57f",
+        "type": "split",
+        "z": "f189f50505a7bc56",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 890,
+        "y": 360,
+        "wires": [
+            [
+                "a8225d0a88f81906",
+                "8c33a718ee9d7606"
+            ]
+        ]
+    },
+    {
+        "id": "42e2cf9e4833bb48",
+        "type": "split",
+        "z": "f189f50505a7bc56",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 890,
+        "y": 440,
+        "wires": [
+            [
+                "f2fe536fe8fc436d",
+                "aef63b0839f01ca3"
+            ]
+        ]
+    },
+    {
+        "id": "f25003931c57606b",
+        "type": "function",
+        "z": "f189f50505a7bc56",
+        "name": "Control Switch",
+        "func": "let topic = \"v3/auto-fan-cooler-cume@ttn/devices/\" + msg.topic + \"/down/push\"\n\nif (msg.medidas == undefined && msg.control_inicio_fin == undefined) {\n    if (msg.payload == true && global.get(\"rele_\" + msg.topic) == false) {\n        global.set(\"rele_\" + msg.topic, msg.payload);\n        node.warn(\"ON\");\n        return {\n            \"payload\": {\n                \"downlinks\": [{\n                    \"f_port\": 4,\n                    \"frm_payload\": Buffer.from(\"ON\", \"utf-8\").toString(\"base64\"),\n                    \"priority\": \"NORMAL\",\n                    \"confirmed\": true\n                }]\n            },\n            \"topic\": topic\n        }\n    } else if (msg.payload == false && global.get(\"rele_\" + msg.topic) == true) {\n        global.set(\"rele_\" + msg.topic, msg.payload);\n        node.warn(\"OFF\");\n        return {\n            \"payload\": {\n                \"downlinks\": [{\n                    \"f_port\": 4,\n                    \"frm_payload\": Buffer.from(\"OFF\", \"utf-8\").toString(\"base64\"),\n                    \"priority\": \"NORMAL\",\n                    \"confirmed\": true\n                }]\n            },\n            \"topic\": topic\n        }\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 60,
+        "wires": [
+            [
+                "5aeb3b2db6e9a3b5"
+            ]
+        ]
+    },
+    {
+        "id": "631cee5f60385270",
+        "type": "link in",
+        "z": "f189f50505a7bc56",
+        "name": "RecepciónDeDatos_IN_Switch",
+        "links": [
+            "b56b079ba0cf24c8",
+            "b58003e9b7c18c94",
+            "d1ea892d5e77de93"
+        ],
+        "x": 795,
+        "y": 60,
+        "wires": [
+            [
+                "f25003931c57606b"
+            ]
+        ]
+    },
+    {
+        "id": "f2fdef38bc502b98",
+        "type": "link in",
+        "z": "45888e1b355f0888",
+        "name": "Planta0_IN_Temp",
+        "links": [
+            "7a7ce6fd9c1e0a1a"
+        ],
+        "x": 275,
+        "y": 120,
+        "wires": [
+            [
+                "c180860447d740b7"
+            ]
+        ]
+    },
+    {
+        "id": "a5da0496709ccdab",
+        "type": "link out",
+        "z": "45888e1b355f0888",
+        "name": "Planta0_OUT_Temp",
+        "mode": "link",
+        "links": [
+            "161fd4fe1d5271ce"
+        ],
+        "x": 695,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6d153bfa14872b25",
+        "type": "link in",
+        "z": "45888e1b355f0888",
+        "name": "Planta0_IN_Hum",
+        "links": [
+            "8c33a718ee9d7606"
+        ],
+        "x": 275,
+        "y": 360,
+        "wires": [
+            [
+                "45a587e41cb05ffe"
+            ]
+        ]
+    },
+    {
+        "id": "8a69814334dc2dda",
+        "type": "link out",
+        "z": "45888e1b355f0888",
+        "name": "Planta0_OUT_Hum",
+        "mode": "link",
+        "links": [
+            "17d68c31ef0b4179"
+        ],
+        "x": 695,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c180860447d740b7",
+        "type": "switch",
+        "z": "45888e1b355f0888",
+        "name": "Switch Temperatura Planta 0",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_1",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_2",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_3",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_4",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_5",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_6",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_7",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_8",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_9",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 10,
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [
+                "2d5bc39e08291e70"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [
+                "a5da0496709ccdab"
+            ]
+        ]
+    },
+    {
+        "id": "45a587e41cb05ffe",
+        "type": "switch",
+        "z": "45888e1b355f0888",
+        "name": "Switch Humedad Planta 0",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_1",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_2",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_3",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_4",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_5",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_6",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_7",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_8",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_9",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo-d38",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 11,
+        "x": 460,
+        "y": 360,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [
+                "baba6314dec99633"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "8a69814334dc2dda"
+            ]
+        ]
+    },
+    {
+        "id": "017f205aca7daab3",
+        "type": "switch",
+        "z": "45888e1b355f0888",
+        "name": "Switch Relé Planta 0",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_1",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_2",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_3",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_4",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_5",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_6",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_7",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_8",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_9",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo-d38",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 11,
+        "x": 450,
+        "y": 620,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [
+                "b03310e93a82e666"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "190debcb0305c1cf"
+            ]
+        ]
+    },
+    {
+        "id": "3772c3aa70e78555",
+        "type": "link in",
+        "z": "45888e1b355f0888",
+        "name": "Planta0_IN_Rele",
+        "links": [
+            "aef63b0839f01ca3",
+            "8cf84963a009b9f3"
+        ],
+        "x": 275,
+        "y": 620,
+        "wires": [
+            [
+                "017f205aca7daab3"
+            ]
+        ]
+    },
+    {
+        "id": "190debcb0305c1cf",
+        "type": "link out",
+        "z": "45888e1b355f0888",
+        "name": "Planta0_OUT_Rele",
+        "mode": "link",
+        "links": [
+            "880fbd7b4e762609"
+        ],
+        "x": 685,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "b03310e93a82e666",
+        "type": "ui_switch",
+        "z": "45888e1b355f0888",
+        "name": "Relé Despacho 5",
+        "label": "Encender / Apagar",
+        "tooltip": "",
+        "group": "0b06c9f7f5a9417b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "nodo_despacho_5",
+        "topicType": "global",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 820,
+        "y": 620,
+        "wires": [
+            [
+                "b58003e9b7c18c94"
+            ]
+        ]
+    },
+    {
+        "id": "2d5bc39e08291e70",
+        "type": "ui_gauge",
+        "z": "45888e1b355f0888",
+        "name": "",
+        "group": "0b06c9f7f5a9417b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura Despacho 5",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b58003e9b7c18c94",
+        "type": "link out",
+        "z": "45888e1b355f0888",
+        "name": "OUT_Rele",
+        "mode": "link",
+        "links": [
+            "631cee5f60385270"
+        ],
+        "x": 955,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "baba6314dec99633",
+        "type": "ui_gauge",
+        "z": "45888e1b355f0888",
+        "name": "",
+        "group": "0b06c9f7f5a9417b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Humedad Despacho 5",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 830,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "161fd4fe1d5271ce",
+        "type": "link in",
+        "z": "22748c8908ef9353",
+        "name": "Planta1_IN_Temp",
+        "links": [
+            "a5da0496709ccdab",
+            "97d24ced41be064c"
+        ],
+        "x": 255,
+        "y": 240,
+        "wires": [
+            [
+                "9e19e687a515ad25"
+            ]
+        ]
+    },
+    {
+        "id": "90b5555ee1885f63",
+        "type": "link out",
+        "z": "22748c8908ef9353",
+        "name": "Planta1_OUT_Temp",
+        "mode": "link",
+        "links": [
+            "45c6945c710d8643"
+        ],
+        "x": 675,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "17d68c31ef0b4179",
+        "type": "link in",
+        "z": "22748c8908ef9353",
+        "name": "Planta1_IN_Hum",
+        "links": [
+            "8a69814334dc2dda"
+        ],
+        "x": 265,
+        "y": 680,
+        "wires": [
+            [
+                "42b16b42459467c7"
+            ]
+        ]
+    },
+    {
+        "id": "4ba0393fe5011158",
+        "type": "link out",
+        "z": "22748c8908ef9353",
+        "name": "Planta1_OUT_Hum",
+        "mode": "link",
+        "links": [
+            "8795a455c7f4bf3b"
+        ],
+        "x": 675,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "9e19e687a515ad25",
+        "type": "switch",
+        "z": "22748c8908ef9353",
+        "name": "Switch Temperatura Planta 1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_10",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_11",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_12",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_13",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_14",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_15",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_16",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_17",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_18",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_19",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_20",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_21",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_22",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_23",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_24",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_25",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_26",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_27",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_28",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_29",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_30",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_31",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_32",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_33",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_34",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_35",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 27,
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "32a9d21c51bf5f21"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "90b5555ee1885f63"
+            ]
+        ]
+    },
+    {
+        "id": "42b16b42459467c7",
+        "type": "switch",
+        "z": "22748c8908ef9353",
+        "name": "Switch Humedad Planta 1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_10",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_11",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_12",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_13",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_14",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_15",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_16",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_17",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_18",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_19",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_20",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_21",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_22",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_23",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_24",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_25",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_26",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_27",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_28",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_29",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_30",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_31",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_32",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_33",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_34",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_35",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 27,
+        "x": 440,
+        "y": 680,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "8f030b516dfc222e"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "4ba0393fe5011158"
+            ]
+        ]
+    },
+    {
+        "id": "6d5c828979d1381a",
+        "type": "switch",
+        "z": "22748c8908ef9353",
+        "name": "Switch Humedad Planta 1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_10",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_11",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_12",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_13",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_14",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_15",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_16",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_17",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_18",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_19",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_20",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_21",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_22",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_23",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_24",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_25",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_26",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_27",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_28",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_29",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_30",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_31",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_32",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_33",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_34",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_35",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 27,
+        "x": 1160,
+        "y": 360,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "b87d962bcfb3cd33"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "927d62fe5983c1b5"
+            ]
+        ]
+    },
+    {
+        "id": "927d62fe5983c1b5",
+        "type": "link out",
+        "z": "22748c8908ef9353",
+        "name": "Planta1_OUT_Rele",
+        "mode": "link",
+        "links": [
+            "693534b6cc1bc0f7"
+        ],
+        "x": 1375,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "880fbd7b4e762609",
+        "type": "link in",
+        "z": "22748c8908ef9353",
+        "name": "Planta1_IN_Rele",
+        "links": [
+            "190debcb0305c1cf"
+        ],
+        "x": 985,
+        "y": 360,
+        "wires": [
+            [
+                "6d5c828979d1381a"
+            ]
+        ]
+    },
+    {
+        "id": "b87d962bcfb3cd33",
+        "type": "ui_switch",
+        "z": "22748c8908ef9353",
+        "name": "Relé Despacho 16",
+        "label": "Encender / Apagar",
+        "tooltip": "",
+        "group": "8353f0d05bb40bad",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "nodo_despacho_16",
+        "topicType": "global",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1480,
+        "y": 340,
+        "wires": [
+            [
+                "d1ea892d5e77de93"
+            ]
+        ]
+    },
+    {
+        "id": "8f030b516dfc222e",
+        "type": "ui_gauge",
+        "z": "22748c8908ef9353",
+        "name": "",
+        "group": "8353f0d05bb40bad",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Humedad Despacho 16",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "32a9d21c51bf5f21",
+        "type": "ui_gauge",
+        "z": "22748c8908ef9353",
+        "name": "",
+        "group": "8353f0d05bb40bad",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura Despacho 16",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 770,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d1ea892d5e77de93",
+        "type": "link out",
+        "z": "22748c8908ef9353",
+        "name": "OUT_Rele",
+        "mode": "link",
+        "links": [
+            "631cee5f60385270"
+        ],
+        "x": 1625,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "45c6945c710d8643",
+        "type": "link in",
+        "z": "1502873c65ff77ae",
+        "name": "Planta2_IN_Temp",
+        "links": [
+            "90b5555ee1885f63"
+        ],
+        "x": 275,
+        "y": 100,
+        "wires": [
+            [
+                "fb84ca1cedb41408"
+            ]
+        ]
+    },
+    {
+        "id": "e221c7997b551f05",
+        "type": "ui_gauge",
+        "z": "1502873c65ff77ae",
+        "name": "",
+        "group": "ba7ede7944c6a3ca",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura Despacho 41",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 860,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "785567e2a19696ca",
+        "type": "ui_gauge",
+        "z": "1502873c65ff77ae",
+        "name": "",
+        "group": "24e3d668ffb0aeae",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura Despacho 40",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 860,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fca6ec4d6a317caa",
+        "type": "ui_gauge",
+        "z": "1502873c65ff77ae",
+        "name": "",
+        "group": "e69cff66cda9f405",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura Despacho 39",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 860,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8795a455c7f4bf3b",
+        "type": "link in",
+        "z": "1502873c65ff77ae",
+        "name": "Planta2_IN_Hum",
+        "links": [
+            "4ba0393fe5011158"
+        ],
+        "x": 275,
+        "y": 400,
+        "wires": [
+            [
+                "9257d72739953b59"
+            ]
+        ]
+    },
+    {
+        "id": "d34898a19c54274b",
+        "type": "ui_gauge",
+        "z": "1502873c65ff77ae",
+        "name": "",
+        "group": "ba7ede7944c6a3ca",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Humedad Despacho 41",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d91108b39eecde51",
+        "type": "ui_gauge",
+        "z": "1502873c65ff77ae",
+        "name": "",
+        "group": "24e3d668ffb0aeae",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Humedad Despacho 40",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "10e5c23bd83c080e",
+        "type": "ui_gauge",
+        "z": "1502873c65ff77ae",
+        "name": "",
+        "group": "e69cff66cda9f405",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Humedad Despacho 39",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00a4db",
+            "#e69d00",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "fb84ca1cedb41408",
+        "type": "switch",
+        "z": "1502873c65ff77ae",
+        "name": "Switch Temperatura Planta 2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_36",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_37",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_38",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_39",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_40",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_41",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 7,
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            [],
+            [
+                "fca6ec4d6a317caa"
+            ],
+            [
+                "785567e2a19696ca"
+            ],
+            [
+                "e221c7997b551f05"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9257d72739953b59",
+        "type": "switch",
+        "z": "1502873c65ff77ae",
+        "name": "Switch Humedad Planta 2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_36",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_37",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_38",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_39",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_40",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_41",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 7,
+        "x": 470,
+        "y": 400,
+        "wires": [
+            [],
+            [],
+            [],
+            [
+                "10e5c23bd83c080e"
+            ],
+            [
+                "d91108b39eecde51"
+            ],
+            [
+                "d34898a19c54274b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "caa1eaaaa7267125",
+        "type": "ui_switch",
+        "z": "1502873c65ff77ae",
+        "name": "Relé Despacho 41",
+        "label": "Encender / Apagar",
+        "tooltip": "",
+        "group": "ba7ede7944c6a3ca",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "nodo_despacho_41",
+        "topicType": "global",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 790,
+        "y": 760,
+        "wires": [
+            [
+                "b56b079ba0cf24c8"
+            ]
+        ]
+    },
+    {
+        "id": "3ee75bacdcb1c2af",
+        "type": "ui_switch",
+        "z": "1502873c65ff77ae",
+        "name": "Relé Despacho 40",
+        "label": "Encender / Apagar",
+        "tooltip": "",
+        "group": "24e3d668ffb0aeae",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "nodo_despacho_40",
+        "topicType": "global",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 790,
+        "y": 720,
+        "wires": [
+            [
+                "b56b079ba0cf24c8"
+            ]
+        ]
+    },
+    {
+        "id": "54a91ea3a8dc381b",
+        "type": "ui_switch",
+        "z": "1502873c65ff77ae",
+        "name": "Relé Despacho 39",
+        "label": "Encender / Apagar",
+        "tooltip": "",
+        "group": "e69cff66cda9f405",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "nodo_despacho_39",
+        "topicType": "global",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 790,
+        "y": 680,
+        "wires": [
+            [
+                "b56b079ba0cf24c8"
+            ]
+        ]
+    },
+    {
+        "id": "b56b079ba0cf24c8",
+        "type": "link out",
+        "z": "1502873c65ff77ae",
+        "name": "OUT_Rele",
+        "mode": "link",
+        "links": [
+            "631cee5f60385270"
+        ],
+        "x": 985,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "7871774ce38701ad",
+        "type": "switch",
+        "z": "1502873c65ff77ae",
+        "name": "Switch Rele Planta 2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_36",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_37",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_38",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_39",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_40",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_41",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 7,
+        "x": 460,
+        "y": 720,
+        "wires": [
+            [],
+            [],
+            [],
+            [
+                "54a91ea3a8dc381b"
+            ],
+            [
+                "3ee75bacdcb1c2af"
+            ],
+            [
+                "caa1eaaaa7267125"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "693534b6cc1bc0f7",
+        "type": "link in",
+        "z": "1502873c65ff77ae",
+        "name": "Planta2_IN_Rele",
+        "links": [
+            "927d62fe5983c1b5"
+        ],
+        "x": 275,
+        "y": 720,
+        "wires": [
+            [
+                "7871774ce38701ad"
+            ]
+        ]
+    },
+    {
+        "id": "f703bef75b3c9c56",
+        "type": "ui_form",
+        "z": "a028eb9e53fec6ae",
+        "name": "",
+        "label": "Horario Despacho 41",
+        "group": "ba7ede7944c6a3ca",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Lunes",
+                "value": "Lunes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Martes",
+                "value": "Martes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Miércoles",
+                "value": "Miércoles",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Jueves",
+                "value": "Jueves",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Viernes",
+                "value": "Viernes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sábado",
+                "value": "Sábado",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Domingo",
+                "value": "Domingo",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Lunes": "",
+            "Martes": "",
+            "Miércoles": "",
+            "Jueves": "",
+            "Viernes": "",
+            "Sábado": "",
+            "Domingo": ""
+        },
+        "payload": "",
+        "submit": "Aceptar",
+        "cancel": "Cancelar",
+        "topic": "nodo_despacho_41",
+        "topicType": "global",
+        "splitLayout": false,
+        "className": "",
+        "x": 260,
+        "y": 440,
+        "wires": [
+            [
+                "7072aad1ed6053ba"
+            ]
+        ]
+    },
+    {
+        "id": "e8d5a976f7d9d846",
+        "type": "influxdb out",
+        "z": "a028eb9e53fec6ae",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB OUT",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "unex",
+        "bucket": "FanCoil",
+        "x": 1240,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b33c24cf19f36504",
+        "type": "change",
+        "z": "a028eb9e53fec6ae",
+        "name": "Control Escritura InfluxDB",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.horario",
+                "pt": "msg",
+                "to": "horario",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "tags.nodo",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "horario",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 80,
+        "wires": [
+            [
+                "e8d5a976f7d9d846"
+            ]
+        ]
+    },
+    {
+        "id": "ae5384c64d0db6e0",
+        "type": "function",
+        "z": "a028eb9e53fec6ae",
+        "name": "Control Payload",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 180,
+        "wires": [
+            [
+                "d2c8680aa310963f"
+            ]
+        ]
+    },
+    {
+        "id": "e2612e22a222530b",
+        "type": "delay",
+        "z": "a028eb9e53fec6ae",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1160,
+        "y": 180,
+        "wires": [
+            [
+                "ae5384c64d0db6e0"
+            ]
+        ]
+    },
+    {
+        "id": "3e8e5cd26cb6c150",
+        "type": "http request",
+        "z": "a028eb9e53fec6ae",
+        "name": "API Zona Horaria",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://worldtimeapi.org/api/timezone/Europe/Madrid",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 810,
+        "y": 140,
+        "wires": [
+            [
+                "f39050f0765c609e"
+            ]
+        ]
+    },
+    {
+        "id": "f39050f0765c609e",
+        "type": "function",
+        "z": "a028eb9e53fec6ae",
+        "name": "Siguiente hora",
+        "func": "function convertirObjeto(objetoJSON) {\n    let nuevoObjetoJSON = {};\n\n    // Recorrer cada clave y valor del objetoJSON original\n    for (let dia in objetoJSON) {\n        if (objetoJSON.hasOwnProperty(dia)) {\n            if(objetoJSON[dia] != \"\"){\n                let horarios = objetoJSON[dia].split(\",\"); // Separar los horarios por coma\n\n                // Convertir cada horario a un objeto con propiedades de inicio y fin\n                if (horarios.length != 0) {\n                    let horariosObj = horarios.map(horario => {\n                        let partesHorario = horario.split(\"-\");\n                        if (partesHorario.length != 0) {\n                            return { \"inicio\": partesHorario[0].trim(), \"fin\": partesHorario[1].trim() };\n                        }\n                    });\n                    // Asignar el arreglo de horarios al nuevo objeto JSON\n                    nuevoObjetoJSON[dia] = horariosObj;\n                }\n            }else{\n                nuevoObjetoJSON[dia] = \"\";\n            }\n        }\n    }\n\n    return nuevoObjetoJSON;\n}\n\nfunction calcularTiempoRestante(objetoJSON, diaSemana, horaActual, minutosActual, segundosActual) {\n    // Verificar que el día de la semana sea válido (del 1 al 7)\n    if (diaSemana == 0) {\n        diaSemana = 7;\n    }\n    if (diaSemana < 1 || diaSemana > 7) {\n        return \"Día de la semana inválido\";\n    }\n\n    // Convertir la hora actual, minutos y segundos a un valor decimal\n    let tiempoActual = horaActual + minutosActual / 60 + segundosActual / 3600;\n\n    let diasSemana = Object.keys(objetoJSON);\n\n    if (diaSemana <= 7) {\n        // Obtener el día correspondiente del objeto JSON\n        let diaActual = diasSemana[diaSemana - 1];\n        let horarios = objetoJSON[diaActual];\n\n        if (horarios != null && horarios != \"\") {\n            // Recorrer los horarios del día actual\n            for (let horario of horarios) {\n                let inicio = convertirHoraDecimal(horario.inicio);\n                let fin = convertirHoraDecimal(horario.fin);\n\n                // Comprobar si estamos dentro de un horario\n                if (tiempoActual >= inicio && tiempoActual <= fin) {\n                    // Calcular la cantidad de segundos restantes hasta que el horario termine\n                    let segundosRestantes = Math.round((fin - tiempoActual) * 3600);\n                    return [segundosRestantes, \"FIN\"];\n                }\n\n                // Comprobar si estamos antes de un horario\n                if (tiempoActual < inicio) {\n                    // Calcular la cantidad de segundos restantes hasta que el horario comience\n                    let segundosRestantes = Math.round((inicio - tiempoActual) * 3600);\n                    return [segundosRestantes, \"INICIO\"];\n                }\n            }\n        }\n    }\n    \n    // No hay horario programado para el día actual\n    // Buscar en los días siguientes hasta encontrar un horario\n    let diaSiguiente = diaSemana % 7 + 1; // Siguiente día de la semana (circular)\n    while (diaSiguiente !== diaSemana) {\n        if (diaSiguiente <= 7) {\n            if (objetoJSON[diasSemana[diaSiguiente - 1]] != \"\") {\n                let horariosSiguiente = objetoJSON[diasSemana[diaSiguiente - 1]];\n                if (horariosSiguiente != null && horariosSiguiente.length > 0) {\n                    // Calcular la cantidad de segundos restantes hasta el primer horario del día siguiente\n                    let inicioSiguiente = convertirHoraDecimal(horariosSiguiente[0].inicio);\n                    let segundosRestantes = Math.round((inicioSiguiente + ((diaSiguiente - diaSemana + 7) % 7) * 24 - tiempoActual) * 3600);\n                    return [segundosRestantes, \"INICIO\"];\n                }\n            }\n        }\n        diaSiguiente = diaSiguiente % 7 + 1; // Pasar al siguiente día de la semana\n    }\n\n    let diaActual = diasSemana[diaSemana - 1];\n    let horarios = objetoJSON[diaActual];\n\n    // Si no hay ningún horario de un día diferente al actual, cogemos el primer horario del día actual.\n    if (horarios != \"\" && horarios != null) {\n        diaSiguiente = diaActual = diaSemana;\n        let inicioSiguiente = convertirHoraDecimal(horarios[0].inicio);\n        let segundosRestantes = Math.round((inicioSiguiente + 7 * 24 - tiempoActual) * 3600);\n        return [segundosRestantes, \"INICIO\"];\n    }\n\n    return \"No hay horarios programados para los días siguientes\";\n}\n\n// Función auxiliar para convertir una hora en formato HH:mm a un valor decimal\nfunction convertirHoraDecimal(hora) {\n    let partesHora = hora.split(\":\");\n    let horaDecimal = parseInt(partesHora[0]) + parseInt(partesHora[1]) / 60;\n    return horaDecimal;\n}\n\n// Preparar zona horaria\nvar dia_de_la_semana = msg.payload.day_of_week;\nconst horaMinutoSegundo = msg.payload.datetime.substr(11, 8);\nconst [hora, minuto, segundo] = horaMinutoSegundo.split(\":\");\n\n\nlet control_antes_despues = \"\";\nmsg.payload = convertirObjeto(msg.horario);\n\n[msg.payload, msg.control_inicio_fin] = calcularTiempoRestante(msg.payload, dia_de_la_semana, parseInt(hora), parseInt(minuto), parseInt(segundo));\n\nglobal.set(\"horario_\"+msg.topic, msg.control_inicio_fin);\n\nmsg.dia_de_la_semana = dia_de_la_semana;\nmsg.hora = parseInt(hora);\nmsg.minuto = parseInt(minuto);\nmsg.segundo = parseInt(segundo);\n\n// Si es FIN quiere decir que la siguiente hora es de apagado.\nif (msg.control_inicio_fin == \"FIN\"){ \n    global.set(\"tiempo_\" + msg.topic, msg.payload / 3600); // Introducimos en una variable auxiliar el tiempo que estará encendido.\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 140,
+        "wires": [
+            [
+                "e2612e22a222530b",
+                "d2c8680aa310963f"
+            ]
+        ]
+    },
+    {
+        "id": "5b50959b95c1437d",
+        "type": "influxdb in",
+        "z": "a028eb9e53fec6ae",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB IN",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "unex",
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "f39740a408184f52"
+            ]
+        ]
+    },
+    {
+        "id": "f0f1160d7c9c6d61",
+        "type": "function",
+        "z": "a028eb9e53fec6ae",
+        "name": "Conversión a Object",
+        "func": "if (msg.payload.length != 0){\n    msg.payload = msg.payload[msg.payload.length-1]._value;\n    msg.horario = JSON.parse(msg.payload);\n\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "3e8e5cd26cb6c150"
+            ]
+        ]
+    },
+    {
+        "id": "1b8cbbc9942a70b2",
+        "type": "function",
+        "z": "a028eb9e53fec6ae",
+        "name": "Formateo del horario",
+        "func": "function eliminarHorariosIncorrectos(objetoJSON) {\n    for (let dia in objetoJSON) {\n        if (objetoJSON.hasOwnProperty(dia)) {\n            let horarios = objetoJSON[dia].split(\", \");\n            let horariosCorrectos = [];\n            for (let i = 0; i < horarios.length; i++) {\n                let horario = horarios[i];\n                if (horario.match(/^\\d{1,2}:\\d{2}-\\d{1,2}:\\d{2}$/)) {\n                    horariosCorrectos.push(horario);\n                }\n            }\n            objetoJSON[dia] = horariosCorrectos.join(\", \");\n        }\n    }\n    return objetoJSON;\n}\n\nfunction ordenarYFusionarHorarios(objetoJSON) {\n    for (let dia in objetoJSON) {\n        if (objetoJSON.hasOwnProperty(dia)) {\n            let horarios = objetoJSON[dia].split(\", \");\n            let horariosOrdenados = horarios.sort((a, b) => {\n                const inicioA = obtenerHora(a.split(\"-\")[0]);\n                const inicioB = obtenerHora(b.split(\"-\")[0]);\n                return inicioA - inicioB;\n            });\n            let horariosFusionados = [];\n            let horarioActual = horariosOrdenados[0];\n            for (let i = 1; i < horariosOrdenados.length; i++) {\n                const horarioSiguiente = horariosOrdenados[i];\n                const finActual = obtenerHora(horarioActual.split(\"-\")[1]);\n                const inicioSiguiente = obtenerHora(horarioSiguiente.split(\"-\")[0]);\n                if (finActual >= inicioSiguiente) {\n                    const finFusionado = horarioSiguiente.split(\"-\")[1];\n                    horarioActual = horarioActual.split(\"-\")[0] + \"-\" + finFusionado;\n                } else {\n                    horariosFusionados.push(horarioActual);\n                    horarioActual = horarioSiguiente;\n                }\n            }\n            horariosFusionados.push(horarioActual);\n            objetoJSON[dia] = horariosFusionados.join(\", \");\n        }\n    }\n    return objetoJSON;\n}\n\nfunction obtenerHora(horaString) {\n    const partesHora = horaString.split(\":\");\n    const horas = parseInt(partesHora[0]);\n    const minutos = parseInt(partesHora[1]);\n    return horas * 60 + minutos;\n}\n\nmsg.payload = eliminarHorariosIncorrectos(msg.payload);\nmsg.horario = ordenarYFusionarHorarios(msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 80,
+        "wires": [
+            [
+                "3e8e5cd26cb6c150",
+                "ab516945b9f4f282"
+            ]
+        ]
+    },
+    {
+        "id": "3b50f4838ba32149",
+        "type": "function",
+        "z": "a028eb9e53fec6ae",
+        "name": "Query 30 Días",
+        "func": "// msg.query = 'from(bucket: \"FanCoil\") |> range(start: -1y) |> filter(fn: (r) => r[\"measurement\"] == \"horario\") |> filter(fn: (r) => r[\"nodo\"] == \"' + msg.topic + '\") |> yield(name: \"last\")'\nmsg.query = 'from(bucket: \"FanCoil\")   |> range(start: -30d)   |> filter(fn: (r) => r[\"_measurement\"] == \"horario\")   |> filter(fn: (r) => r[\"nodo\"] == \"'+msg.topic+'\")   |> yield(name: \"last\")'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "5b50959b95c1437d"
+            ]
+        ]
+    },
+    {
+        "id": "5ff0a055c964ec53",
+        "type": "link in",
+        "z": "a028eb9e53fec6ae",
+        "name": "Horarios IN",
+        "links": [
+            "c213682fcf53b6a4",
+            "58b07e9ff06a7566",
+            "171690d67d5ebd91"
+        ],
+        "x": 165,
+        "y": 140,
+        "wires": [
+            [
+                "3b50f4838ba32149"
+            ]
+        ]
+    },
+    {
+        "id": "d2c8680aa310963f",
+        "type": "link out",
+        "z": "a028eb9e53fec6ae",
+        "name": "Horarios OUT",
+        "mode": "link",
+        "links": [
+            "0b744ff785094771"
+        ],
+        "x": 1435,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e8bceb938ba16bdd",
+        "type": "link in",
+        "z": "a028eb9e53fec6ae",
+        "name": "Horarios DashBoard IN",
+        "links": [
+            "7072aad1ed6053ba",
+            "0fd1df4013cf44be"
+        ],
+        "x": 445,
+        "y": 80,
+        "wires": [
+            [
+                "1b8cbbc9942a70b2"
+            ]
+        ]
+    },
+    {
+        "id": "689cf2746eae55e9",
+        "type": "ui_form",
+        "z": "a028eb9e53fec6ae",
+        "name": "",
+        "label": "Horario Despacho 40",
+        "group": "24e3d668ffb0aeae",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Lunes",
+                "value": "Lunes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Martes",
+                "value": "Martes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Miércoles",
+                "value": "Miércoles",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Jueves",
+                "value": "Jueves",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Viernes",
+                "value": "Viernes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sábado",
+                "value": "Sábado",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Domingo",
+                "value": "Domingo",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Lunes": "",
+            "Martes": "",
+            "Miércoles": "",
+            "Jueves": "",
+            "Viernes": "",
+            "Sábado": "",
+            "Domingo": ""
+        },
+        "payload": "",
+        "submit": "Aceptar",
+        "cancel": "Cancelar",
+        "topic": "nodo_despacho_40",
+        "topicType": "global",
+        "splitLayout": false,
+        "className": "",
+        "x": 260,
+        "y": 400,
+        "wires": [
+            [
+                "7072aad1ed6053ba"
+            ]
+        ]
+    },
+    {
+        "id": "a79d65560b6639f8",
+        "type": "ui_form",
+        "z": "a028eb9e53fec6ae",
+        "name": "",
+        "label": "Horario Despacho 39",
+        "group": "e69cff66cda9f405",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Lunes",
+                "value": "Lunes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Martes",
+                "value": "Martes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Miércoles",
+                "value": "Miércoles",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Jueves",
+                "value": "Jueves",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Viernes",
+                "value": "Viernes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sábado",
+                "value": "Sábado",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Domingo",
+                "value": "Domingo",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Lunes": "",
+            "Martes": "",
+            "Miércoles": "",
+            "Jueves": "",
+            "Viernes": "",
+            "Sábado": "",
+            "Domingo": ""
+        },
+        "payload": "",
+        "submit": "Aceptar",
+        "cancel": "Cancelar",
+        "topic": "nodo_despacho_39",
+        "topicType": "global",
+        "splitLayout": false,
+        "className": "",
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "7072aad1ed6053ba"
+            ]
+        ]
+    },
+    {
+        "id": "ec9e88929d429120",
+        "type": "ui_form",
+        "z": "a028eb9e53fec6ae",
+        "name": "",
+        "label": "Horario Despacho 16",
+        "group": "8353f0d05bb40bad",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Lunes",
+                "value": "Lunes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Martes",
+                "value": "Martes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Miércoles",
+                "value": "Miércoles",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Jueves",
+                "value": "Jueves",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Viernes",
+                "value": "Viernes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sábado",
+                "value": "Sábado",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Domingo",
+                "value": "Domingo",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Lunes": "",
+            "Martes": "",
+            "Miércoles": "",
+            "Jueves": "",
+            "Viernes": "",
+            "Sábado": "",
+            "Domingo": ""
+        },
+        "payload": "",
+        "submit": "Aceptar",
+        "cancel": "Cancelar",
+        "topic": "nodo_despacho_16",
+        "topicType": "global",
+        "splitLayout": false,
+        "className": "",
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "7072aad1ed6053ba"
+            ]
+        ]
+    },
+    {
+        "id": "52076eb7cc44a338",
+        "type": "ui_form",
+        "z": "a028eb9e53fec6ae",
+        "name": "",
+        "label": "Horario Despacho 5",
+        "group": "0b06c9f7f5a9417b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Lunes",
+                "value": "Lunes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Martes",
+                "value": "Martes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Miércoles",
+                "value": "Miércoles",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Jueves",
+                "value": "Jueves",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Viernes",
+                "value": "Viernes",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sábado",
+                "value": "Sábado",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Domingo",
+                "value": "Domingo",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Lunes": "",
+            "Martes": "",
+            "Miércoles": "",
+            "Jueves": "",
+            "Viernes": "",
+            "Sábado": "",
+            "Domingo": ""
+        },
+        "payload": "",
+        "submit": "Aceptar",
+        "cancel": "Cancelar",
+        "topic": "nodo_despacho_5",
+        "topicType": "global",
+        "splitLayout": false,
+        "className": "",
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "7072aad1ed6053ba"
+            ]
+        ]
+    },
+    {
+        "id": "58b07e9ff06a7566",
+        "type": "link out",
+        "z": "a028eb9e53fec6ae",
+        "name": "Horarios Inject OUT",
+        "mode": "link",
+        "links": [
+            "5ff0a055c964ec53"
+        ],
+        "x": 495,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7072aad1ed6053ba",
+        "type": "link out",
+        "z": "a028eb9e53fec6ae",
+        "name": "Horarios DashBoard OUT",
+        "mode": "link",
+        "links": [
+            "e8bceb938ba16bdd"
+        ],
+        "x": 445,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "49c94ac401550bee",
+        "type": "inject",
+        "z": "a028eb9e53fec6ae",
+        "name": "Inicio Despacho 41",
+        "props": [
+            {
+                "p": "topic",
+                "v": "nodo_despacho_41",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 660,
+        "wires": [
+            [
+                "58b07e9ff06a7566"
+            ]
+        ]
+    },
+    {
+        "id": "30e04ddd92c73f67",
+        "type": "inject",
+        "z": "a028eb9e53fec6ae",
+        "name": "Inicio Despacho 40",
+        "props": [
+            {
+                "p": "topic",
+                "v": "nodo_despacho_40",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 620,
+        "wires": [
+            [
+                "58b07e9ff06a7566"
+            ]
+        ]
+    },
+    {
+        "id": "28d0607ae1bb3f53",
+        "type": "inject",
+        "z": "a028eb9e53fec6ae",
+        "name": "Inicio Despacho 39",
+        "props": [
+            {
+                "p": "topic",
+                "v": "nodo_despacho_39",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 580,
+        "wires": [
+            [
+                "58b07e9ff06a7566"
+            ]
+        ]
+    },
+    {
+        "id": "2f57c1424a168f64",
+        "type": "inject",
+        "z": "a028eb9e53fec6ae",
+        "name": "Inicio Despacho 16",
+        "props": [
+            {
+                "p": "topic",
+                "v": "nodo_despacho_16",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "58b07e9ff06a7566"
+            ]
+        ]
+    },
+    {
+        "id": "a5799125659d617c",
+        "type": "inject",
+        "z": "a028eb9e53fec6ae",
+        "name": "Inicio Despacho 5",
+        "props": [
+            {
+                "p": "topic",
+                "v": "nodo_despacho_5",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 500,
+        "wires": [
+            [
+                "58b07e9ff06a7566"
+            ]
+        ]
+    },
+    {
+        "id": "ab516945b9f4f282",
+        "type": "function",
+        "z": "a028eb9e53fec6ae",
+        "name": "Conversión a String",
+        "func": "msg.horario = JSON.stringify(msg.horario);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 80,
+        "wires": [
+            [
+                "b33c24cf19f36504"
+            ]
+        ]
+    },
+    {
+        "id": "f39740a408184f52",
+        "type": "switch",
+        "z": "a028eb9e53fec6ae",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 200,
+        "wires": [
+            [
+                "f0f1160d7c9c6d61"
+            ],
+            [
+                "eb4fae586dbc61fa"
+            ]
+        ]
+    },
+    {
+        "id": "eb4fae586dbc61fa",
+        "type": "function",
+        "z": "a028eb9e53fec6ae",
+        "name": "Query 1 año",
+        "func": "msg.query = 'from(bucket: \"FanCoil\")   |> range(start: -1y)   |> filter(fn: (r) => r[\"_measurement\"] == \"horario\")   |> filter(fn: (r) => r[\"nodo\"] == \"'+msg.topic+'\")   |> yield(name: \"last\")'\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "f531106e269c233e"
+            ]
+        ]
+    },
+    {
+        "id": "f531106e269c233e",
+        "type": "influxdb in",
+        "z": "a028eb9e53fec6ae",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB IN",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "unex",
+        "x": 710,
+        "y": 260,
+        "wires": [
+            [
+                "a6f3f3f5569d8167"
+            ]
+        ]
+    },
+    {
+        "id": "4e063c9d1cc38967",
+        "type": "influxdb out",
+        "z": "a028eb9e53fec6ae",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB OUT",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "unex",
+        "bucket": "FanCoil",
+        "x": 1300,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "db27225be6315299",
+        "type": "change",
+        "z": "a028eb9e53fec6ae",
+        "name": "Control Escritura InfluxDB",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.horario",
+                "pt": "msg",
+                "to": "horario",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "tags.nodo",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "horario",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 260,
+        "wires": [
+            [
+                "4e063c9d1cc38967"
+            ]
+        ]
+    },
+    {
+        "id": "a6f3f3f5569d8167",
+        "type": "function",
+        "z": "a028eb9e53fec6ae",
+        "name": "Último horario",
+        "func": "if (msg.payload.length != 0) {\n    msg.horario = msg.payload[msg.payload.length - 1]._value;\n\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 260,
+        "wires": [
+            [
+                "db27225be6315299",
+                "3f3457288d735c46"
+            ]
+        ]
+    },
+    {
+        "id": "3f3457288d735c46",
+        "type": "delay",
+        "z": "a028eb9e53fec6ae",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1040,
+        "y": 300,
+        "wires": [
+            [
+                "171690d67d5ebd91"
+            ]
+        ]
+    },
+    {
+        "id": "171690d67d5ebd91",
+        "type": "link out",
+        "z": "a028eb9e53fec6ae",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "5ff0a055c964ec53"
+        ],
+        "x": 1135,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3eaa9d1cc94da121",
+        "type": "inject",
+        "z": "a028eb9e53fec6ae",
+        "g": "8a3a59baa996eaaf",
+        "name": "Insertar Horario Despacho 5",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "nodo_despacho_5",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Lunes\":\"9:00-10:00, 13:15-14:10, 13:35-14:30, 16:00-17:30, 18:00-19:30\",\"Martes\":\"8:30-9:40, 11:00-12:00, 12:30-13:30, 15:00-16:30, 17:30-19:00\",\"Miércoles\":\"9:30-10:30, 11:30-12:30, 14:00-15:00, 15:30-17:00\",\"Jueves\":\"12:30-13:30, 14:00-15:00, 15:30-17:00\",\"Viernes\":\"8:00-9:40, 11:00-12:00, 12:30-13:30, 15:00-16:30, 17:00-18:30\",\"Sábado\":\"\",\"Domingo\":\"9:00-10:30\"}",
+        "payloadType": "json",
+        "x": 800,
+        "y": 500,
+        "wires": [
+            [
+                "0fd1df4013cf44be"
+            ]
+        ]
+    },
+    {
+        "id": "ce7dcda2c34dd737",
+        "type": "inject",
+        "z": "a028eb9e53fec6ae",
+        "g": "8a3a59baa996eaaf",
+        "name": "Insertar Horario Despacho 41",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "nodo_despacho_41",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Lunes\":\"9:00-10:00, 14:15-15:45, 16:35-19:10\",\"Martes\":\"8:30-10:30, 13:00-14:30, 17:00-19:30\",\"Miércoles\":\"9:30-10:30, 11:00-12:30, 15:00-17:00\",\"Jueves\":\"12:30-14:00, 15:30-17:00\",\"Viernes\":\"8:00-10:00, 11:30-13:30, 15:00-17:30\",\"Sábado\":\"9:00-18:00\",\"Domingo\":\"10:00-16:00\"}",
+        "payloadType": "json",
+        "x": 800,
+        "y": 580,
+        "wires": [
+            [
+                "0fd1df4013cf44be"
+            ]
+        ]
+    },
+    {
+        "id": "0fd1df4013cf44be",
+        "type": "link out",
+        "z": "a028eb9e53fec6ae",
+        "g": "8a3a59baa996eaaf",
+        "name": "Horarios DashBoard OUT",
+        "mode": "link",
+        "links": [
+            "e8bceb938ba16bdd"
+        ],
+        "x": 985,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4d2a7ad8f384c02b",
+        "type": "inject",
+        "z": "a028eb9e53fec6ae",
+        "g": "8a3a59baa996eaaf",
+        "name": "Insertar Horario Despacho 16",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "nodo_despacho_16",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Lunes\":\"9:00-10:00, 13:15-14:10, 13:35-14:30, 16:00-17:30, 18:00-19:30\",\"Martes\":\"8:30-9:40, 11:00-12:00, 12:30-13:30, 15:00-16:30, 17:30-19:00\",\"Miércoles\":\"\",\"Jueves\":\"12:30-13:30, 14:00-15:00, 15:30-17:00\",\"Viernes\":\"8:00-9:40, 11:00-12:00, 12:30-13:30, 15:00-16:30, 17:00-18:30\",\"Sábado\":\"14:15-18:30\",\"Domingo\":\"\"}",
+        "payloadType": "json",
+        "x": 800,
+        "y": 540,
+        "wires": [
+            [
+                "0fd1df4013cf44be"
+            ]
+        ]
+    },
+    {
+        "id": "8bbcd45a123c2bd0",
+        "type": "timer-node",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Timer Despacho D41",
+        "topic": "",
+        "timer": 5,
+        "payloadOn": "true",
+        "payloadOnType": "bool",
+        "payloadOff": "false",
+        "payloadOffType": "bool",
+        "x": 700,
+        "y": 680,
+        "wires": [
+            [],
+            [
+                "8d45959190956723"
+            ]
+        ]
+    },
+    {
+        "id": "797685da3bf236af",
+        "type": "timer-node",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Timer Despacho D40",
+        "topic": "",
+        "timer": 5,
+        "payloadOn": "true",
+        "payloadOnType": "bool",
+        "payloadOff": "false",
+        "payloadOffType": "bool",
+        "x": 700,
+        "y": 620,
+        "wires": [
+            [],
+            [
+                "8d45959190956723"
+            ]
+        ]
+    },
+    {
+        "id": "d2bbb3af75decfd8",
+        "type": "timer-node",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Timer Despacho D39",
+        "topic": "",
+        "timer": 5,
+        "payloadOn": "true",
+        "payloadOnType": "bool",
+        "payloadOff": "false",
+        "payloadOffType": "bool",
+        "x": 700,
+        "y": 560,
+        "wires": [
+            [],
+            [
+                "8d45959190956723"
+            ]
+        ]
+    },
+    {
+        "id": "c715734b18ca5c78",
+        "type": "timer-node",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Timer Despacho D16",
+        "topic": "",
+        "timer": 5,
+        "payloadOn": "true",
+        "payloadOnType": "bool",
+        "payloadOff": "false",
+        "payloadOffType": "bool",
+        "x": 700,
+        "y": 500,
+        "wires": [
+            [],
+            [
+                "8d45959190956723"
+            ]
+        ]
+    },
+    {
+        "id": "51e5b1c7ab774421",
+        "type": "timer-node",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Timer Despacho D5",
+        "topic": "",
+        "timer": 5,
+        "payloadOn": "true",
+        "payloadOnType": "bool",
+        "payloadOff": "false",
+        "payloadOffType": "bool",
+        "x": 700,
+        "y": 440,
+        "wires": [
+            [],
+            [
+                "8d45959190956723"
+            ]
+        ]
+    },
+    {
+        "id": "0b744ff785094771",
+        "type": "link in",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Temporizadores IN",
+        "links": [
+            "d2c8680aa310963f"
+        ],
+        "x": 165,
+        "y": 400,
+        "wires": [
+            [
+                "79406192690a4a1f"
+            ]
+        ]
+    },
+    {
+        "id": "c213682fcf53b6a4",
+        "type": "link out",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Temporizadores OUT",
+        "mode": "link",
+        "links": [
+            "5ff0a055c964ec53"
+        ],
+        "x": 1115,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "9370b2774fe8b8d7",
+        "type": "switch",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Switch Planta 2",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_36",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_37",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_38",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_39",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_40",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_41",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 7,
+        "x": 360,
+        "y": 660,
+        "wires": [
+            [],
+            [],
+            [],
+            [
+                "d2bbb3af75decfd8"
+            ],
+            [
+                "797685da3bf236af"
+            ],
+            [
+                "8bbcd45a123c2bd0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5073a54feee61b5e",
+        "type": "switch",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Switch Planta 1",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_10",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_11",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_12",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_13",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_14",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_15",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_16",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_17",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_18",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_19",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_20",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_21",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_22",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_23",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_24",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_25",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_26",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_27",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_28",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_29",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_30",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_31",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_32",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_33",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_34",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_35",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 27,
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "c715734b18ca5c78"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "9370b2774fe8b8d7"
+            ]
+        ]
+    },
+    {
+        "id": "79406192690a4a1f",
+        "type": "switch",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Switch Planta 0",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "nodo_despacho_1",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_2",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_3",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_4",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_5",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_6",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_7",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_8",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "nodo_despacho_9",
+                "vt": "global"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 10,
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [
+                "51e5b1c7ab774421"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [
+                "5073a54feee61b5e"
+            ]
+        ]
+    },
+    {
+        "id": "4cbf18029d17fe55",
+        "type": "function",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Control payload Relé",
+        "func": "/*\nif(global.get(\"rele_\" + msg.topic) == true && msg.control_inicio_fin == \"FIN\"){\n    msg.payload = false;\n    return msg;\n} else if (global.get(\"rele_\" + msg.topic) == false && msg.control_inicio_fin == \"INICIO\"){\n    msg.payload = true;\n    return msg;\n}\n*/\n\nif (msg.control_inicio_fin == \"FIN\") {\n    msg.payload = false;\n    return msg;\n} else if (msg.control_inicio_fin == \"INICIO\") {\n    msg.payload = true;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 560,
+        "wires": [
+            [
+                "56abb469ac7a66dc",
+                "8cf84963a009b9f3"
+            ]
+        ]
+    },
+    {
+        "id": "56abb469ac7a66dc",
+        "type": "link out",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Temporizadores Rele OUT",
+        "mode": "link",
+        "links": [
+            "84088883585538e4"
+        ],
+        "x": 1345,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "8d45959190956723",
+        "type": "function",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Control temporizador",
+        "func": "if (msg.payload === 1) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 580,
+        "wires": [
+            [
+                "c213682fcf53b6a4",
+                "4cbf18029d17fe55",
+                "5f94370274ab6d16"
+            ]
+        ]
+    },
+    {
+        "id": "8cf84963a009b9f3",
+        "type": "link out",
+        "z": "f9584d3e80e0ebd9",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "3772c3aa70e78555"
+        ],
+        "x": 1345,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "997217a283195251",
+        "type": "function",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Query ",
+        "func": "msg.query = 'from(bucket: \"FanCoil\")   |> range(start: -30d)   |> filter(fn: (r) => r[\"_measurement\"] == \"horas_activas\")   |> yield(name: \"last\")'\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 800,
+        "wires": [
+            [
+                "3e2859094baa68a9"
+            ]
+        ]
+    },
+    {
+        "id": "3e2859094baa68a9",
+        "type": "influxdb in",
+        "z": "f9584d3e80e0ebd9",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB IN",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "unex",
+        "x": 630,
+        "y": 800,
+        "wires": [
+            [
+                "a0d708f5c579c4e2"
+            ]
+        ]
+    },
+    {
+        "id": "a0d708f5c579c4e2",
+        "type": "function",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Control horas activas",
+        "func": "if (msg.payload.length == 0) { // Respuesta vacía\n    if (global.get(\"horas_activas\") == undefined) { // Valor vacío\n        global.set(\"horas_activas\", global.get(\"tiempo_\" + msg.topic));\n    } else if (global.get(\"tiempo_\" + msg.topic) == undefined) {\n        global.set(\"horas_activas\", 0);\n    } else {\n        global.set(\"horas_activas\", global.get(\"horas_activas\") + global.get(\"tiempo_\" + msg.topic));\n    }\n} else { // Con respuesta\n    if (global.get(\"tiempo_\" + msg.topic) == undefined) { // Valor vacío\n        global.set(\"horas_activas\", msg.payload[msg.payload.length - 1]._value);\n    }else{\n        global.set(\"horas_activas\", msg.payload[msg.payload.length - 1]._value + global.get(\"tiempo_\" + msg.topic));\n    }\n}\nmsg.payload = global.get(\"horas_activas\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 800,
+        "wires": [
+            [
+                "5fbc1d3d1561e39f",
+                "2e7f923d5eaea981"
+            ]
+        ]
+    },
+    {
+        "id": "41e304028177d02a",
+        "type": "influxdb out",
+        "z": "f9584d3e80e0ebd9",
+        "influxdb": "2e313fa5fa6ebf68",
+        "name": "InfluxDB OUT",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "unex",
+        "bucket": "FanCoil",
+        "x": 1280,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "5fbc1d3d1561e39f",
+        "type": "change",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Control Escritura InfluxDB",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fields.horas_activas",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "set",
+                "p": "tags.timestamp",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "horas_activas",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$append(fields,tags)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1070,
+        "y": 820,
+        "wires": [
+            [
+                "41e304028177d02a"
+            ]
+        ]
+    },
+    {
+        "id": "634b278ad756d278",
+        "type": "inject",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Inicio",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 330,
+        "y": 800,
+        "wires": [
+            [
+                "997217a283195251"
+            ]
+        ]
+    },
+    {
+        "id": "2e7f923d5eaea981",
+        "type": "ui_text",
+        "z": "f9584d3e80e0ebd9",
+        "group": "d45cc1a1ffd00350",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Horas activas",
+        "format": "{{msg.payload.toFixed(6)}}h",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1040,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "5f94370274ab6d16",
+        "type": "function",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Control Rele",
+        "func": "/*\n    Si el relé está activo, quiere decir que este bloque se está ejecutando cuando se va a apagar,\n    por lo que al apagarse, se contará el tiempo desde que estuvo encendido hasta que se ha apagado\n*/\n\nif(global.get(\"rele_\"+msg.topic)){\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 600,
+        "wires": [
+            [
+                "997217a283195251"
+            ]
+        ]
+    },
+    {
+        "id": "a08165ee2783436a",
+        "type": "inject",
+        "z": "f9584d3e80e0ebd9",
+        "name": "Resetear horas activas",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 800,
+        "y": 840,
+        "wires": [
+            [
+                "5fbc1d3d1561e39f",
+                "2e7f923d5eaea981"
+            ]
+        ]
+    }
+]
