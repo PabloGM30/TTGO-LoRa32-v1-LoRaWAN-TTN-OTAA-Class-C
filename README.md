@@ -8,7 +8,7 @@ Este proyecto consiste en la monitorización y automatización de sistemas de cl
   - Clase C.
   - Versión 1.0.3 de LoRaWAN.
   - Modo de activación por OTAA.
-  Se utiliza una integración en The Things Stack con MQTT para poder recoger los datos recibidos por el dispositivo final en un servicio de NODE-RED instalado en un contenedor de un servidor Docker.
+- Se utiliza una integración en The Things Stack con MQTT para poder recoger los datos recibidos por el dispositivo final en un servicio de NODE-RED instalado en un contenedor de un servidor Docker.
 - Un servidor Docker con dos contenedores:
   - NODE-RED para la recogida de datos del broker de The Things Stack mediante un cliente MQTT, mostrado de datos en un panel de control y toma de decisiones. Además, gestiona límites de temperatura y horarios de ocupación de la estancia que se quiere monitorizar para encender o apagar el sistema de climatización dependiendo de si está ocupada la estancia y si su temparua está fuera de los límites establecidos.
   - InluxDB para el almacenamiento de datos y de variables.
